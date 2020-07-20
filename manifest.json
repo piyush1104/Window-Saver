@@ -3,19 +3,10 @@
 
 	"version": "1.6",
 	"default_locale": "en",
-	
+
 	"name": "Window Saver",
 	"description": "__MSG_extensionDescription__",
-	"homepage_url": "https://github.com/bit-tinker/Window-Saver",
-
-	"applications":
-	{
-	    "gecko":
-		{
-			"id": "{18f88f40-01fb-4324-86cb-f99cd32f2de4}",
-			"strict_min_version": "55.0"
-	    }
-	},
+	"homepage_url": "https://github.com/piyush1104/Window-Saver",
 
 	"icons": {
 		"96": "icons/dark.svg"
@@ -26,13 +17,13 @@
 		"tabs",
 		"storage"
 	],
-	
+
 	"incognito": "spanning",
 
 	"background": {
 		"scripts": ["background.js"]
 	},
-	
+
 	"options_ui": {
 		"page": "options/options.html"
 	},
