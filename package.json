@@ -69,6 +69,8 @@
     "start": "node scripts/start.js",
     "watch": "node scripts/watch.js",
     "build": "node scripts/build.js",
+    "build:bg": "webpack --mode production ./src/background/index.js --output ./build/background.js",
+    "build:bg:dev": "webpack --mode development ./src/background/index.js --output ./build/background.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -140,6 +142,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "webpack-cli": "^3.3.12"
   }
 }

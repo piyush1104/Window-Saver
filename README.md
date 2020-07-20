@@ -1,4 +1,4 @@
-This project acts as a boilerplate for react applications using react.
+This project acts as a boilerplate for react based extensions using redux.
 
 It has been created using create-react-app, but it also provides you the **watch** options in node scripts.<br />
 This comes with a limitation - that I had to eject the scripts, which mean you won't get any future update for your build scripts. You will have to do them manually.
