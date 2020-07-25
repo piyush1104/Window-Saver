@@ -4,8 +4,9 @@
 process.env.BABEL_ENV = 'production'
 process.env.NODE_ENV = 'production'
 process.env.INLINE_RUNTIME_CHUNK = 'false'
+process.env.OPTIONS = true
+process.env.ENTRY_POINT = 'options'
 process.env.GENERATE_SOURCEMAP = false
-
 // Makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
 // terminate the Node.js process with a non-zero exit code.
@@ -39,7 +40,7 @@ const WARN_AFTER_CHUNK_GZIP_SIZE = 1024 * 1024
 const isInteractive = process.stdout.isTTY
 
 // Warn and crash if required files are missing
-if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
+if (!checkRequiredFiles([paths.optionsHtml, paths.appIndexJs])) {
 	process.exit(1)
 }
 

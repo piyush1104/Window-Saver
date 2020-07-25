@@ -70,7 +70,9 @@
     "start": "node scripts/start.js",
     "watch": "node scripts/watch.js",
     "watch:options": "node scripts/watchOptions.js",
-    "build": "node scripts/build.js",
+    "build:popup": "node scripts/build.js",
+    "build:options": "node scripts/buildOptions.js",
+    "build": "rm -rf build/ && npm run build:popup && npm run build:options",
     "build:bg": "cp src/background/index.js build/background.js",
     "copy": "node scripts/copy.js",
     "test": "node scripts/test.js"

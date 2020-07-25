@@ -601,7 +601,7 @@ module.exports = function (webpackEnv, watch = false) {
 			// - "entrypoints" key: Array of files which are included in `index.html`,
 			//   can be used to reconstruct the HTML if necessary
 			new ManifestPlugin({
-				fileName: 'asset-manifest.json',
+				fileName: 'asset-manifest' + entrypoint + '.json',
 				publicPath: paths.publicUrlOrPath,
 				generate: (seed, files, entrypoints) => {
 					const manifestFiles = files.reduce((manifest, file) => {
