@@ -1,6 +1,8 @@
 process.env.BABEL_ENV = 'development'
 process.env.NODE_ENV = 'development'
 process.env.INLINE_RUNTIME_CHUNK = 'false'
+process.env.OPTIONS = true
+process.env.ENTRY_POINT = 'options'
 
 const fs = require('fs-extra')
 const paths = require('../config/paths')
@@ -42,7 +44,7 @@ config.watchOptions = {
 webpack(config).watch({}, (err, stats) => {
 	console.log('\n<<================================================>>\n')
 	if (err) {
-		console.error('Here comes some error')
+		console.error('Here comes some error\n')
 		console.error(err)
 	} else {
 		// this just exists to copy the remaining thing from the public folder to build folder ( see build.js)

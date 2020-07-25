@@ -1,0 +1,17 @@
+button,
+[role='button'] {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0px;
+}
+
+input {
+	outline: none;
+	padding: 0px;
+}
+
+.font-inherit {
+	font-size: inherit;
+}

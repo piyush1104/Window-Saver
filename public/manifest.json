@@ -1,18 +1,49 @@
 {
   "manifest_version": 2,
-  "name": "__MSG_extensionName__",
-  "short_name": "__MSG_extensionShortName__",
-  "description": "__MSG_extensionDescription__",
-  "version": "1.0",
-  "default_locale": "en",
+  "name": "Window Saver",
+  "description": "Save Windows to visit them later.",
+  "version": "1.7",
   "icons":{
-      "128": "icons/icon128.png",
-      "48": "icons/icon48.png",
-      "16": "icons/icon16.png"
+      "96": "icons/dark.svg"
   },
   "browser_action":{
-      "default_icon": "icons/icon.png",
-      "default_title": "__MSG_extensionTitle__",
-      "default_popup": "index.html"
-  }
+      "default_title": "Window Saver",
+      "default_popup": "index.html",
+      "default_icon": {
+				"16": "icons/dark.svg",
+				"32": "icons/dark.svg",
+				"64": "icons/dark.svg",
+				"128": "icons/dark.svg"
+			},
+			"theme_icons": [
+				{
+					"size": 16,
+					"light": "icons/light.svg",
+					"dark": "icons/dark.svg"
+				}, {
+					"size": 32,
+					"light": "icons/light.svg",
+					"dark": "icons/dark.svg"
+				}, {
+					"size": 64,
+					"light": "icons/light.svg",
+					"dark": "icons/dark.svg"
+				}, {
+					"size": 128,
+					"light": "icons/light.svg",
+					"dark": "icons/dark.svg"
+				}
+			]
+  },
+  "options_ui": {
+		"page": "options.html"
+	},
+  "permissions": [
+  	"bookmarks",
+		"tabs",
+		"storage"
+  ],
+  "background": {
+		"scripts": ["background.js"]
+	}
 }

@@ -1,0 +1,25 @@
+.option {
+	padding: 20px 40px;
+	font-size: 20px;
+	line-height: 1.6;
+	&-list {
+		padding-left: 30px;
+		border-left: 1px solid black;
+		margin-top: 10px;
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		input {
+			margin-right: 10px;
+			height: 20px;
+			width: 20px;
+		}
+	}
+	&-other {
+		margin-top: 15px;
+		&-item {
+			margin-top: 0px;
+		}
+	}
+}

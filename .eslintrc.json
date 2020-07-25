@@ -1,28 +1,28 @@
 {
-    "env": {
-        "browser": true,
-        "es2020": true,
-        "jquery": true,
-        "amd": true,
-        "commonjs": true,
-        "node": true
-    },
-    "globals": { "_": true },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 11,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "react/prop-types": 0
-    }
+	"env": {
+		"browser": true,
+		"es2020": true,
+		"jquery": true,
+		"amd": true,
+		"commonjs": true,
+		"node": true
+	},
+	"globals": { "_": true, "browser": true },
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 11,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"react/prop-types": 0
+	}
 }

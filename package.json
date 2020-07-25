@@ -36,6 +36,7 @@
     "jest-environment-jsdom-fourteen": "1.0.1",
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
+    "lodash": "^4.17.19",
     "mini-css-extract-plugin": "0.9.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pnp-webpack-plugin": "1.6.4",
@@ -68,9 +69,10 @@
   "scripts": {
     "start": "node scripts/start.js",
     "watch": "node scripts/watch.js",
+    "watch:options": "node scripts/watchOptions.js",
     "build": "node scripts/build.js",
-    "build:bg": "webpack --mode production ./src/background/index.js --output ./build/background.js",
-    "build:bg:dev": "webpack --mode development ./src/background/index.js --output ./build/background.js",
+    "build:bg": "cp src/background/index.js build/background.js",
+    "copy": "node scripts/copy.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
