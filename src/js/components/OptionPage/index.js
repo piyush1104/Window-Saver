@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { defaultSettings } from 'helpers/constants'
+import browser from 'webextension-polyfill'
 
 class OptionPage extends Component {
 	constructor(props) {

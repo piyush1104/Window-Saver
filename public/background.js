@@ -25,14 +25,16 @@ async function handleMessage(request) {
 		for (var i = 0; i < length; i++) {
 			let tab = tabList[i]
 			try {
-				await browser.tabs.create({
+				let response = await browser.tabs.create({
 					active: false,
-					discarded: true,
-					title: tab.title,
+					// discarded: true,
+					// title: tab.title,
 					url: tab.url,
 					windowId: windowInfo.id,
 				})
+				await browser.tabs.discard(response.id)
 			} catch (err) {
+				console.log(err)
 				errors.push(tab)
 			}
 		}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Modal from 'Common/Modal'
 import ConfirmationPopup from './ConfirmationPopup'
 import { defaultSettings } from 'helpers/constants'
+import browser from 'webextension-polyfill'
 
 class App extends Component {
 	constructor(props) {
