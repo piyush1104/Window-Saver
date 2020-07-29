@@ -8,7 +8,7 @@
       exports: {}
     };
     factory(mod);
-    global.browser = mod.exports;
+    global.browserMod = mod.exports;
   }
 })(typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : this, function (module) {
   /* webextension-polyfill - v0.6.0 - Mon Dec 23 2019 12:32:53 */
